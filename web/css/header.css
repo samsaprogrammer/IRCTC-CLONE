@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* header section start */
+
+.header{
+
+    position: relative;
+    width: 100%;
+    /* padding: 20px; */
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid #fff;
+}
+
+.header_first_logo{
+    /* margin: 10px; */
+    margin-left: 50px;
+}
+
+/* Navbar section start */
+
+.nav_bar nav{
+    width: 100%;
+    /* margin-top: 30px; */
+    /* font-size: 12px; */
+    font-weight: 500;
+    margin-left: 200px;
+    /* background-color: red; */
+    cursor: pointer;
+}
+
+.nav_bar nav ul{
+    list-style-type: none;
+
+}
+
+.nav_bar nav ul li{
+    display: inline;
+    padding: 10px;
+}
+.first_nav{
+    margin-left: 100px;
+}
+
+.first_nav ul li{
+    font-family:  Body, Quicksand, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+/* Modal section start */
+
+.nav_bar .first_nav ul .nav_login{
+    background: #213D77;
+    border: 1px solid #213D77;
+    color: #fff;
+}
+
+/* Full-width input fields */
+/* input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    /* border: 1px solid #ccc; */
+    /* box-sizing: border-box; */
+  /* }  */
+  
+  /* Set a style for all buttons */
+  .modal_login_btn {
+    background-color: #213D77;
+    color: white;
+    padding: 10px;
+    /* margin: 8px 0; */
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+ 
+  .container {
+    padding: 16px;
+  }
+
+  .container .modal_container_box{
+    height:450px;
+    width: 35%;
+    background: #fff;
+    box-shadow: 0px 0px 10px #000;
+    border: 1px solid#fff;
+    margin-left: 30px;
+  }
+
+  .container .modal_container_box h1{
+    font-size: 25px;
+    font-weight: 700;
+    color: #213D77;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    text-decoration: underline #213D77;
+  }
+
+  .container .modal_container_box input{
+    height: 35px;
+    width: 300px;
+    background: #E8F0FE;
+    border: 1px solid #E8F2FE;
+  }
+
+  .container .modal_container_box input:hover{
+    border: 1px solid #000;
+  }
+
+  .container .modal_container_box .input_modal_text{
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  .container .modal_container_box .input_modal_pass{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  
+  .container .modal_container_box h3{
+    color:#213D77;
+    margin-left: 30px;
+    margin-top: 8px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  .container .modal_container_box .input_modal_btn{
+    background: #213D77;
+    color: #fff;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .container .modal_container_box .input_modal_text2{
+    background: #fff;
+    border-bottom: 1px solid #a59c9c;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  .container .modal_container_box .input_modal_checkbox{
+    height: 20px;
+    border-radius: none;
+    margin-left: -100px;
+    margin-top: 30px;
+    background: #E8F0FE;
+  }
+
+  .container .modal_container_box .modal_checkbox_span{
+    color:#213D77;
+    position: absolute;
+    top: 60%;
+    left: 19%;
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .container .modal_container_box .modal_sign_btn{
+    background: #FB792B;
+    color: #DEDEDE;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    /* padding: 20px; */
+    text-decoration: bold;
+    font-size: 14px;
+    border: 1px solid #FB792B;
+  }
+
+  .container .modal_container_box .modal_rigistar_agent_btn{
+    height: 50px;
+    width: 100%;
+    border: 1px solid;
+    /* background-color: red; */
+  }
+
+  .modal_rigistar_agent_btn .modal_register{
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 40%;
+    background-color: #213D77;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid #213D77;
+    cursor: pointer;
+  }
+  
+  .modal_rigistar_agent_btn .modal_agentlogin{
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 40%;
+    background-color: #213D77;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid #213D77;
+    cursor: pointer;
+  }
+  
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin-left: 130px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: 95%;
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: #213D77;
+    height: 40px;
+    width: 40px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    background-color: #213e7796;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+/* Modal section end */
+
+.nav_bar .first_nav ul .nav_alert{
+    background: #DEDEDE;
+}
+
+.nav_bar .first_nav ul li a{
+  text-decoration: none;
+  color: #000;
+}
+
+.nav_bar .second_nav{
+    font-size: 11px;
+    font-weight: 700;
+    font-family: Body, Quicksand, sans-serif;
+    margin-top: 25px;
+}
+
+.nav_bar  .second_nav  li i{
+    font-size: 16px;
+    color: #7F7F7F;
+}
+
+.nav_bar .second_nav  .exclusive{
+    background: #213D77;
+    border: 1px solid #213D77;
+    color: #fff;
+}
+
+.nav_bar  .second_nav .nav_train{
+    color: #FB792B;
+    text-decoration: underline #FB792B;
+}
+
+/* Navbar section end */
+
+.header_second_logo img{
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+}
+
+
+/* Header section end */

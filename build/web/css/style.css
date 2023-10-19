@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Body, Quicksand, sans-serif;
+}
+
+
+/* Main contoiner section start */
+.main_container{
+    position: relative;
+    background: url(/assets/asset\ 18.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #fff;
+    display: flex;
+}
+
+.main_container .search_box{
+    height:460px;
+    width: 550px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: #fff;
+    /* border: 1px solid; */
+}
+
+
+.main_container .search_box .search_box_top{
+    height: 40px;
+    width: 100%;
+    border: 1px solid #fff;
+}
+
+.main_container .search_box .search_box_top .pnr_status{
+    /* height: 40px; */
+    padding: 10px;
+    width: 50%;
+    color: #fff;
+    background: #213D77;
+    float: left;
+    /* border: 1px solid #213D77; */
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+.main_container .search_box .search_box_top .charts_vacancy{
+    /* height: 40px; */
+    width: 49%;
+    padding: 10px;
+    background: #213D77;
+    color: #fff;
+    float: right;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.main_container .search_box .book_ticket_search_box{
+    height: 100px;
+    position: relative;
+    width: 100%;
+    /* border: 1px solid; */
+}
+
+.main_container .search_box .book_ticket_search_box .azadi75 {
+    float: left;
+}
+
+.main_container .search_box .book_ticket_search_box .book_ticket_text {
+    text-align: center;
+    padding: 30px;
+    color: #213D77;
+    /* font-size: 20px; */
+    font-weight: 700;
+    float: left;
+}
+
+.main_container .search_box .book_ticket_search_box .g2 {
+    float: left;
+}
+.main_container .search_box .book_ticket_search_box .g2  img{
+    height: 100px;
+    width: 120px;
+}
+
+.main_container .search_box .search_train_box{
+    height: 250px;
+    width: 100%;
+    /* border: 1px solid; */
+}
+
+
+
+.search_train_box ::-webkit-input-placeholder{
+  color: #213D77;
+  font-size: 14px;
+  padding: 10px;
+  font-weight: 700;
+  /* margin-left: 50px; */
+}
+
+ .classes{
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px;
+  color: #213D77;
+}
+
+.general{
+  font-size: 14px;
+  padding: 10px;
+  font-weight: 700;
+  color: #213D77;
+}
+
+.dob{
+  font-size: 14px;
+  font-weight: 700;
+  color: #213D77;
+  padding: 10px;
+}
+
+.search_train_box .checkboxbtn{
+  height: 20px;
+  width: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.search_train_box .maincheckboxtext{
+  font-size: 14px;
+  font-weight: 700;
+  color: #213D77;
+  margin-left: 10px;
+}
+
+.main_container .search_box .search_train_box .from{
+    height: 40px;
+    border-radius: 2px;
+    width: 250px;
+    border: 1px solid gray;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.main_container .search_box .search_train_box .dob{
+    height: 40px;
+    border-radius: 2px;
+    width: 180px;
+    border: 1px solid gray;
+    margin-left: 30px;
+}
+
+.main_container .search_box .search_train_box .to{
+    height: 40px;
+    border-radius: 2px;
+    width: 250px;
+    border: 1px solid gray;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.main_container .search_box .search_train_box .classes{
+    height: 40px;
+    border-radius: 2px;
+    width: 180px;
+    border: 1px solid gray;
+    margin-left: 30px;
+}
+.main_container .search_box .search_train_box .general{
+    height: 40px;
+    border-radius: 2px;
+    width: 180px;
+    border: 1px solid gray;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.main_container .search_box .search_train_box .find_train{
+    height: 40px;
+    border-radius: 10px;
+    width: 120px;
+    background-color: #FB792B;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #FB792B;
+    margin-left: 20px;
+    margin-top: 30px;
+    position: absolute;
+    left: 10%;
+    top: 68%;
+    cursor: pointer;
+}
+.main_container .search_box .search_train_box .disha_btn{
+    /* height: 40px; */
+    border-radius: 10px;
+    /* width: 120px; */
+    padding: 10px;
+    background-color: #01BB0A;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 200;
+    border: 1px solid #01BB0A;
+    margin-left: 20px;
+    margin-top: 30px;
+    position: absolute;
+    left: 25%;
+    cursor: pointer;
+    top: 68%;
+}
+
+.main_container  .notices{
+    height: 90px;
+    width: 550px;
+    margin: 10px;
+    margin-left: 100px;
+    border: 1px solid #fff;
+    background: #fff;
+}
+
+.main_container  .notices p{
+    font-size: 11px;
+    color: red;
+    margin: 8px;
+}
+
+.main_container  .notices h6{
+    font-size: 11px;
+    color: blue;
+    margin: 8px;
+}
+
+
+
+
+
+
+
+/* Indian railway text section start */
+
+.main_container .main_content_text{
+    margin-top: 15px;
+    margin-left: 150px;
+    color: #213D77;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: Body, Quicksand, sans-serif;
+}
+
+.main_container .main_content_text h3{
+    font-size: 22px;
+    font-weight: 200;
+    margin-left: 100px;
+    margin-top: 20px;
+
+} 
+
+.main_container .main_content_text hr{
+    display: inline;
+    /* color: #213D77; */
+    margin-left: 5px;
+}
+/* Indian railway text section end  */
+
+/* Main contoiner section end */
+
+
+/* Scrool bar costomize section start */
+::-webkit-scrollbar
+{
+    width: 8px;
+}
+
+
+::-webkit-scrollbar-track
+{
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #C9C9C9;
+    border-radius: 20px;
+}
+
+/* Scroll bar costomize section end */
+

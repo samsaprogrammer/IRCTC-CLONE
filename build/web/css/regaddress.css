@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Body, Quicksand, sans-serif;
+}
+
+.registration{
+    background-color: #E9EFF5;
+    height: 100%;
+    border: 1px solid #E9EFF5 ;
+}
+
+.basic_container{
+    width: 80%;
+    height: 1200px;
+    background: #fff;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 10%;
+    border: 1px solid #fff;
+    margin-bottom: 10%;
+}
+
+
+/* Basic box section start */
+
+.basic_container .detail_box{
+    /* background-color: lightgray; */
+    margin-left: 10%;
+    width: 50%;
+    height: 100%;
+    margin-top: 4%;
+}
+
+.detail_box h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.format_detail{
+    display: flex;
+}
+
+.format_detail h4{
+    /* float: left; */
+    padding-left: 5%;
+    margin-top: 3%;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+.detail_box .basicFormDetail input{
+    width: 40%;
+    height: 40px;
+    margin-left: 3%;
+    margin-top: 4%;
+    border: 1px solid  lightgrey;
+    border-radius: 5px;
+}
+
+.detail_box .basicFormDetail ::-webkit-input-placeholder{
+    font-size: 12px;
+    font-weight: 600;
+    color: #082B88;
+    padding: 20px;
+}
+
+.detail_box .basicFormDetail select{
+    width: 40%;
+    height: 40px;
+    margin-left: 3%;
+    margin-top: 4%;
+    border: 1px solid  lightgrey;
+    border-radius: 5px;
+    color: #082B88;
+    font-size: 12px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.basicFormDetail .officeaddresstext{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 3%;
+    margin-left: 3%;
+    color: #333;
+}
+
+.basicFormDetail h3{
+    font-size: 14px;
+    font-weight: 700;
+    color: #082B88;
+    margin-left: 8%;
+    margin-top: 5%;
+    line-height: 20px;
+}
+
+.basicFormDetail .reglastcheckbox{
+    font-size: 14px;
+    font-weight: 700;
+    color:#333;
+    margin-left: 8%;
+    margin-top: 1%;
+}
+
+
+.basicFormDetail .refreshbtn{
+    height: 40px;
+    width: 50%;
+    background-color: #213D77;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #213D77;
+    margin-left: 3%;
+    margin-top: 50px;
+}
+
+.basicFormDetail .refreshbtn i{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 50%;
+    cursor: pointer;
+}
+
+
+
+.regbutton .regcancel{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 8%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.regbutton .regcancel a{
+    text-decoration: none;
+    color: #000;
+}
+
+.regbutton .regcancel:hover{
+    border: 2px solid #FB792B;
+    background-color: #E9EFF5;
+}
+
+.regbutton .regcontinue{
+    float: right;
+    margin-top: 8%;
+    font-size: 16px;
+    font-weight: 700;
+    background: #FB792B;
+    color: #fff;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid #FB792B;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Scrool bar costomize section start */
+::-webkit-scrollbar
+{
+    width: 8px;
+}
+
+
+::-webkit-scrollbar-track
+{
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #C9C9C9;
+    border-radius: 20px;
+}
+
+/* Scroll bar costomize section end */

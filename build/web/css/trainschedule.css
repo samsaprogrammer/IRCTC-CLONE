@@ -1,0 +1,96 @@
+.trainschedule_form_box{
+    height: 100%;
+    width: 100%;
+    background: #d4f7acb4;
+    border: 1px solid #d4f7acb4;
+}
+
+.trainschedule_form{
+    height: 550px;
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 10%;
+    background: #fff;
+    margin-bottom: 2%;
+    box-shadow: 5px 5px 15px #333;
+    border: 1px solid #fff;
+}
+.inputBox {
+    position: relative;
+  }
+  
+  .inputBox input {
+    padding: 15px 20px;
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+    color: #213D77;
+    border: 1px solid #213D77;
+    font-size: 1em;
+  }
+  
+  .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 15px 20px;
+    pointer-events: none;
+    font-size: 1em;
+    transition: 0.4s cubic-bezier(0.05, 0.81, 0, 0.93);
+    color: #213D77;
+    letter-spacing: 0.1em;
+  }
+  
+  .inputBox input:focus ~ span,
+  .inputBox input:valid ~ span {
+    font-size: 0.7em;
+    transform: translateX(14px) translateY(-7.5px);
+    padding: 0 5px;
+    border-radius: 2px;
+    background: #fff;
+    letter-spacing: 0em;
+    border: 1px solid #213D77;
+  }
+  
+  .trainschedule_form .firstBox{
+    display: flex;
+    margin-top: 27px;
+    margin-left: 20px;
+  }
+
+  .firstBox .trainBox{
+    margin-left: 30px;
+  }
+
+  .inputBox span{
+    margin-left: 30px;
+  }
+
+  .trainBtn {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #213D77;
+    text-shadow: none;
+    background: transparent;
+    box-shadow: transparent;
+    border: 1px solid #213D77;
+    transition: 0.5s ease;
+    user-select: none;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  
+  .trainBtn:hover {
+    color: #ffffff;
+    background: #213D77;
+    border: 1px solid #213D77;
+    text-shadow: 0 0 5px #ffffff,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px #213D77,
+                0 0 20px #213D77,
+                0 0 50px #213D77,
+                0 0 100px #213D77;
+  }

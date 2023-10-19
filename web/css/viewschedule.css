@@ -1,0 +1,60 @@
+.tablebox{
+  width: 90%;
+  height: 500px;
+  background-color: #fff;
+  box-shadow: 5px 5px 15px #333;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.tablebox table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tablebox thead{
+  background: #efefef;
+  text-align: left;
+}
+
+th, td{
+  font-size: .9rem;
+  padding:  1rem .4rem;
+}
+
+
+tbody:hover{
+  background-color: #333 ;
+  color: #fff;
+}
+
+.trainBtn {
+  padding: 7px 10px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #e20909;
+  text-shadow: none;
+  background: transparent;
+  box-shadow: transparent;
+  border: 1px solid #e20909;
+  transition: 0.5s ease;
+  user-select: none;
+  cursor: pointer;
+  /* margin-left: 50px; */
+  /* margin-top: 20px; */
+}
+
+.trainBtn:hover {
+  color: #ffffff;
+  background: #e20909;
+  border: 1px solid #e20909;
+  text-shadow: 0 0 5px #ffffff,
+              0 0 10px #ffffff,
+              0 0 20px #ffffff;
+  box-shadow: 0 0 5px #e20909,
+              0 0 20px #e20909,
+              0 0 50px #e20909,
+              0 0 100px #e20909;
+}

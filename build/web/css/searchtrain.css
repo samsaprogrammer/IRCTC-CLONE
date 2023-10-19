@@ -1,0 +1,223 @@
+.searchbox{
+    background-color: #213D77;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 1px solid #213D77;
+}
+
+.searchbox .searchinputbox{
+    padding: 10px;
+}
+
+.searchbox img{
+    height: 20px;
+}
+
+.searchbox select{
+    padding: 15px;
+}
+.searchbox .modifysearch{
+   width: 150px;
+   padding: 10px;
+   background-color: #FB792B;
+   border: 1px solid #FB792B;
+   color: #fff;
+   font-size: 16px;
+   font-weight: 700;
+   cursor: pointer;
+}
+
+.searchbox ::-webkit-input-placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    /* color: #213D77; */
+}
+
+.serchcheckbox input{
+    height: 20px;
+    width: 20px;
+    margin-top: 20px;
+}
+
+.serchcheckbox span{
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 5px;
+    margin-top: -20px;
+}
+
+.mainbox{
+    display: flex;
+}
+
+.mainbox .filterbox{
+    height: 700px;
+    width: 35%;
+    border: 1px solid lightslategray;
+}
+
+.mainbox .trainbox{
+    height: 500px;
+    width: 100%;
+    /* border: 1px solid lightslategray; */
+    margin-left: 2%;
+}
+
+.leftbtn{
+    margin-top: 5%;
+}
+
+.leftbtn .durationbtn{
+    padding: 10px;
+    background-color: #213D77;
+    border: 1px solid #213D77;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    float: left;
+    cursor: pointer;
+}
+
+.leftbtn .showbtn{
+    padding: 10px;
+    /* background-color: #213D77; */
+    /* border: 1px solid #213D77; */
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.leftbtn .previousbtn{
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    /* margin-right: 10px; */
+    float: right;
+    cursor: pointer;
+}
+
+.leftbtn .nextbtn{
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+ .showtrain{
+    height: 350px;
+    width: 100%;
+    border: 1px solid lightslategray;
+    margin-top: 10%;
+}
+
+.trainnamebox{
+    display: flex;
+    background-color: #F5F5F5;
+}
+
+.trainnamebox .trainname{
+    margin-left: 10px;
+}
+
+.trainnamebox .week{
+    margin-left: 150px;
+}
+
+.trainnamebox .schedule{
+    margin-left: 180px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #213D77;
+    cursor: pointer;
+}
+
+.arrivaldepature{
+    display: flex;
+}
+
+.arrivaldepature .trainarrival{
+    margin-left: 10px;
+}
+
+.arrivaldepature .timming{
+    margin-left: 35%;
+}
+
+.arrivaldepature .depature{
+    margin-left: 30%;
+}
+
+.trainseat{
+    display: flex;
+    background-color: #F5F5F5;
+}
+
+
+.trainseat .secondsetting{
+    border: 1px solid #F5F5F5;
+    border-radius: 20px;
+    margin-left: 3%;
+    background-color: #fff;
+    height: 150px;
+    width: 150px;
+}
+
+.trainseat .slepper{
+    border: 1px solid #F5F5F5;
+    border-radius: 20px;
+    margin-left: 5%;
+    /* padding: 10px; */
+    background-color: #fff;
+    height: 150px;
+    width: 150px;
+}
+
+.trainseat .thirdac{
+    border: 1px solid #F5F5F5;
+    border-radius: 20px;
+    margin-left: 5%;
+    /* padding: 10px; */
+    background-color: #fff;
+    height: 150px;
+    width: 150px;
+}
+
+.trainseat .secondac{
+    border: 1px solid #F5F5F5;
+    border-radius: 20px;
+    margin-left: 5%;
+    /* padding: 10px; */
+    background-color: #fff;
+    height: 150px;
+    width: 150px;
+}
+
+.trainseat .firstac{
+    border: 1px solid #F5F5F5;
+    border-radius: 20px;
+    margin-left: 3%;
+    /* padding: 10px; */
+    background-color: #fff;
+    height: 150px;
+    width: 150px;
+}
+
+.bookbtn{
+    padding: 10px;
+    background-color: #FB792B;
+    border: 1px solid #FB792B;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 10px;
+}

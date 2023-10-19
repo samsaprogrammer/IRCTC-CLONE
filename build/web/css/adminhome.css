@@ -1,0 +1,723 @@
+/* --------------Font------------- */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,700&family=Inconsolata:wght@300&family=Ubuntu:ital,wght@0,300;0,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+:root{
+    --orange:#213D77;
+    --white:#fff;
+    --gray:#f5f5f5;
+    --black01:#222;
+    --black02:#999;
+    --backgound:#d4f7acb4;
+}
+
+body{
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.dash_cotainer{
+    position: relative;
+    width: 100%;
+}
+
+.das_navigation{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: var(--orange);
+    border-left: 10px solid var(--orange);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.das_navigation.active{
+    width: 80px;
+}
+
+.das_navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.das_navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style-type: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.sideNav-img a img.active{
+   display: none;
+}
+
+.sideNav-img a img{
+    border-radius: 50%;
+    height: 130px;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+
+.das_navigation ul li:hover,
+.das_navigation ul li.hovered{
+    background-color: var(--white);
+}
+
+.das_navigation ul li:nth-child(1){
+    margin-bottom: 40px;
+    pointer-events: none;
+}
+
+.das_navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.das_navigation ul li:hover a,
+.das_navigation ul li.hovered a{
+    color: var(--orange);
+}
+
+.das_navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.das_navigation ul li a .icon ion-icon{
+    font-size: 1.75rem;
+}
+
+.das_navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+
+
+/* ------------Curve outside------------------- */
+
+.das_navigation ul li:hover a::before,
+.das_navigation ul li.hovered a::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top:-50px;
+    width: 50px;
+    height: 50px;
+    background-color:transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--white);
+    pointer-events: none;
+}
+
+.das_navigation ul li:hover a::after,
+.das_navigation ul li.hovered a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom:-50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--white);
+    pointer-events: none;
+}
+
+
+/* Profil image section start */
+
+/* Full-width input fields */
+
+  
+  /* Set a style for all buttons */
+ 
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+    /* The Close Button (x) */
+    .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+      }
+
+
+      .close:hover,
+      .close:focus {
+        color: var(--orange);
+        cursor: pointer;
+      }
+  
+  /* Extra styles for the cancel button */
+
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+   
+  button{
+    border: none;
+    border-radius: 50%;
+  }
+  
+  img.avatar {
+    width: 30%;
+    margin-top: 20px;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+
+  .container h2{
+    text-align: center;
+  }
+  .container p{
+    text-align: center;
+    margin-top: 5px;
+  }
+  .container h1 {
+    text-align: center;
+    border: 2px solid gray;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: var(--orange);
+  }
+
+  .container h1 a:hover{
+    color: var(--black02);
+  }
+
+  .container a{
+    text-decoration: none;
+    color: var(--orange);
+  }
+  
+
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 68%;
+    top: 0%;
+    width: 35%; /* Full width */
+    height: 70%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    /* background-color: rgb(0,0,0); Fallback color */
+    /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background: linear-gradient(rgba(250, 246, 246, 0.774),rgba(255, 250, 250, 0.774));
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid ;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 30px;
+  }
+  
+
+
+  .add_account h5  {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .add_account h5 a{
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 10px;
+    
+  }
+
+  .add_account h5 a:hover{
+     color: var(--orange);
+     /* border: 1px solid var(--orange); */
+  }
+
+
+  
+
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+/* Profil image section end */
+
+
+
+/* Change Password Modal Section Start */
+
+
+.change_password_modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 35%;
+  top: 0%;
+  width: 35%; 
+  height: 70%; 
+  overflow: auto; 
+  /* background-color: rgb(0,0,0); Fallback color */
+  /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+  padding-top: 60px;
+}
+
+
+    /* The Close Button (x) */
+    .change_password_close {
+      position: absolute;
+      right: 25px;
+      top: 2%;
+      left: 85%;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+
+    .change_password_close:hover,
+    .change_password_close:focus {
+      color: var(--orange);
+      cursor: pointer;
+    }
+
+    .form_main {
+      width: 300px;
+      height: 400px;
+      display: flex;
+      /* border: 1px solid; */
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(255, 255, 255);
+      padding: 30px 30px 30px 30px;
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .form_main::before {
+      position: absolute;
+      content: "";
+      width: 340px;
+      height: 400px;
+      background-color: #213e77bb;
+      transform: rotate(45deg);
+      left: -180px;
+      bottom: 30px;
+      z-index: 1;
+      border-radius: 30px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
+    }
+    
+    .heading {
+      font-size: 1.5em;
+      color: #333;
+      font-weight: 700;
+      margin: 5px 0 10px 0;
+      z-index: 2;
+    }
+    
+    .inputContainer {
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+    }
+    
+    .inputIcon {
+      position: absolute;
+      left: 3px;
+    }
+    
+    .inputField {
+      width: 100%;
+      height: 50px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid rgb(173, 173, 173);
+      margin: 10px 0;
+      color: black;
+      font-size: .8em;
+      font-weight: 500;
+      box-sizing: border-box;
+      padding-left: 30px;
+    }
+    
+    .inputField:focus {
+      outline: none;
+      border-bottom: 2px solid rgb(199, 114, 255);
+    }
+    
+    .inputField::placeholder {
+      color: rgb(80, 80, 80);
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+    
+    .changepasswordbtn {
+      z-index: 2;
+      position: relative;
+      width: 100%;
+      border: none;
+      background-color: var(--orange);
+      height: 30px;
+      color: white;
+      font-size: .8em;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    
+    .changepasswordbtn:hover {
+      background-color: #fff;
+      color: #333;
+      border: 1px solid #333;
+    }
+    
+    .forgotLink {
+      z-index: 2;
+      font-size: .7em;
+      font-weight: 500;
+      color: rgb(44, 24, 128);
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+    }
+    
+    
+/* Change Password Modal Section End */
+
+
+/* -----------------Main Content------------- */
+
+.main_content{
+    position: absolute;
+    width: calc(100% - 200px);
+    left: 200px;
+    min-height: 100vh;
+    background: var(--white);
+    transition: 0.5s;
+}
+
+.main_content.active{
+    width: calc(100% - 80px);
+    left: 80px;
+}
+
+.topbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.toggle{
+    position: relative;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.search{
+    position: relative;
+    width: 600px;
+    margin: 0 10px;
+}
+
+.search label{
+    position: relative;
+    width: 100%;
+}
+
+.search label input{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+
+.search label ion-icon{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 1.2rem;
+}
+
+.user{
+    position: relative;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.user img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.header-box{
+    background-color: var(--backgound);
+    height: 600px;
+}
+
+  .cardbox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+  }
+
+
+  .cardbox .Card{
+    position:relative;
+    background: var(--white);
+    padding: 25px;
+    margin-top: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .cardbox .Card .number{
+    position: relative;
+    font-weight: 500;
+    font-size: 2.2rem;
+    color: var(--orange);
+  }
+
+  .cardbox .Card .cardName{
+    color: var(--black02);
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+
+  .cardbox .Card .iconBox{
+    font-size: 3rem;
+    color: var(--black02);
+  }
+
+.cardbox .Card:hover{
+    background: var(--orange);
+}
+
+.cardbox .Card:hover .number,
+.cardbox .Card:hover .cardName,
+.cardbox .Card:hover .iconBox{
+    color: var(--white);
+}
+
+
+
+/* Respinsive */
+
+
+
+
+/* Main Header Contant Section Start */
+.mainbox{
+    width: 95%;
+    margin-top: 10px;
+    margin-left: 30px;
+    /* background-color: red; */
+}
+.barcharbox{
+    background:#fff;
+    width: 62%;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    /* height: 200px; */
+    float: left;
+}
+.barcharbox .chart_box{
+    height: 350px;
+    margin-left: 5px;
+}
+
+.polyareachart{
+    background-color: #fff;
+    width: 30%;
+    border-radius: 10px;
+    float: right;
+    margin-top: 10px;
+    height: 350px;
+}
+/* Main Header Contant Section end */
+
+
+
+/* Copytight section */
+
+.copyright{
+    color: #222;
+    font-weight: 500;
+    font-size: .8rem;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.copyright span a{
+    color: var(--orange);
+    text-decoration: none;
+}
+.copyright span a:hover{
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+
+/* Main Header Contant Section End */
+
+
+/*lodeer section start*/
+
+.loader-container
+{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 10000;
+    background:#fff;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.loader-container.fade-out
+{
+    top: -120%;
+}
+
+/*lodeer section end */
+
+
+@media   (max-width:991px){
+    .das_navigation{
+        left: -300px;
+    }
+
+    .das_navigation.active{
+        width: 300px;
+        left: 0;
+    }
+
+    .main_content{
+        width: 100%;
+        left: 0;
+    }
+
+    .main_content.active{
+        left: 300px;
+    }
+
+    .cardbox{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+   
+
+}
+
+@media   (max-width:768px){
+    .summary{
+       grid-template-columns: 1fr;
+    }
+}
