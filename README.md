@@ -1,5 +1,5 @@
 
-# IRCTC CLONE
+# 📌IRCTC CLONE
 This project is a web application designed to replicate the functionality of the Indian Railway Catering and Tourism Corporation (IRCTC) platform. It aims to provide users with a seamless experience for booking train tickets, checking train schedules, and managing their travel itineraries.
 ## 😊Authors
 
