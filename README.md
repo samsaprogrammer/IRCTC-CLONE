@@ -49,7 +49,7 @@ If you have any feedback, please reach out to us at samsa.programmer@gmail.com
 
 💬 Ask me about Programming
 
-📫 How to reach me Linkedin
+📫 To reach me Linkedin
 
 
 
